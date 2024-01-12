@@ -1,5 +1,7 @@
+const path = require("path");
+
 function getMessages(req, res) {
-  res.send("<ul><li>Hellooo!</li></ul>");
+  res.sendFile(path.join(__dirname, "..", "public", "laptop.webp"));
 }
 
 function postMessage(req, res) {
